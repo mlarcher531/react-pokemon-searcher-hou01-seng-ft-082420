@@ -10,11 +10,11 @@ class PokemonPage extends React.Component {
       <Container>
         <h1>Pokemon Searcher</h1>
         <br />
-        <PokemonForm />
+        <PokemonForm addPokemon={this.props.addPokemon} />
         <br />
-        <Search />
+        <Search handleSearch={this.props.handleSearch} />
         <br />
-        <PokemonCollection />
+        <PokemonCollection allPokemon={this.props.allPokemon}/>
       </Container>
     )
   }
